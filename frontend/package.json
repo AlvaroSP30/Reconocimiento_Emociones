@@ -1,14 +1,17 @@
 {
   "name": "daw-front",
   "private": true,
+  "homepage": "https://AlvaroSP30.github.io/Reconocimiento_Emociones",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite --host",
+  "build": "tsc -b && vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
